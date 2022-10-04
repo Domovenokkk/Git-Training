@@ -4,17 +4,20 @@ int main() {
 	setlocale(LC_ALL, "russian");
 	int a, b;
 	float div;
-	scanf_s("%d %d", &a, &b);
-	if (b == 0) {
-		printf("Плохо\n");
+	printf("Введите первое значение - ");
+	scanf_s("%d", &a);
+	printf("Введите второе значение - ");
+	scanf_s("%d", &b);
+    if (b == 0) {
+		printf("На 0 делить нельзя\n");
 	}
 	else {
 		if (a == 0) {
-			printf("0");
+			printf("Ответ 0");
 		}
 		else {
 			div = a / b;
-			printf("%f", div);
+			printf("Ответ - %f", div);
 		}
 	}
 	system("pause");
